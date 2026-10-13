@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login und Registrierung</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="header">
+<header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="einloggen.html">Login</a>
+</header>
+</div>
+<div class="login-box">
+<main>
+
+    <section id="login-area">
+        <h1>Anmelden</h1>
+
+        <form id="login-form">
+            <label for="login-email">E-Mail-Adresse</label>
+            <input
+                    id="login-email"
+                    type="email"
+                    autocomplete="username"
+                    required
+            >
+
+            <label for="login-password">Passwort</label>
+            <input
+                    id="login-password"
+                    type="password"
+                    autocomplete="current-password"
+                    required
+            >
+
+            <button type="submit">Anmelden</button>
+        </form>
+
+        <button id="show-register" class="secondary" type="button">
+            Neuen Account erstellen
+        </button>
+    </section>
+
+    <section id="register-area" hidden>
+        <h1>Registrieren</h1>
+
+        <form id="register-form">
+            <label for="register-email">E-Mail-Adresse</label>
+            <input
+                    id="register-email"
+                    type="email"
+                    autocomplete="username"
+                    required
+            >
+
+            <label for="register-password">Passwort</label>
+            <input
+                    id="register-password"
+                    type="password"
+                    autocomplete="new-password"
+                    minlength="8"
+                    required
+            >
+
+            <label for="register-confirm">Passwort wiederholen</label>
+            <input
+                    id="register-confirm"
+                    type="password"
+                    autocomplete="new-password"
+                    minlength="8"
+                    required
+            >
+
+            <button type="submit">Account erstellen</button>
+        </form>
+
+        <button id="show-login" class="secondary" type="button">
+            Zurück zur Anmeldung
+        </button>
+    </section>
+
+    <section id="private-area" hidden>
+        <h1>Du bist angemeldet!</h1>
+        <p id="welcome"></p>
+
+        <button type="button" onclick="window.location.href='index.html'">Zurück zur Startseite</button>
+    </section>
+
+    <p id="message" role="status"></p>
+
+    <script src="script.js"></script>
+</main>
+</div>
+</body>
+</html>

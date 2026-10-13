@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+
+.login-box {
+    box-shadow: 0 5px 15px 2px #c2c2c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+    border-radius: 20px;
+    
+}
+
+.login-box body {
+    margin: 10%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    font-family: system-ui, sans-serif;
+    color: #172033;
+    background: #eef2f7;
+}
+
+main {
+    max-width: 420px;
+    padding: 32px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input {
+    border: 1px solid #8995a7;
+}
+
+button {
+    border: 0;
+    color: white;
+    background: #1d4ed8;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+.secondary {
+    color: #172033;
+    background: #e5e7eb;
+}
+
+.secondary:hover {
+    background: #d1d5db;
+}
+
+#message {
+    line-height: 1.5;
+}
+
+
+.header body {
+    margin: 10%;
+}
+
+
+.header header {
+    height: 100px;
+    box-shadow: 0 5px 15px 2px #c2c2c2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.header header a {
+    text-decoration: none;
+    margin-right: 16px;
+    color: #c2c2c2;
+}
+
+
+.header header a:hover {
+    color: #000000;
+}
+
+
+.zhm {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1d4ed8;
+    color: #eef2f7;
+    padding: 5px;
+    margin: 50px 100px 10px 20px;
+    
+}
+
+
+.zhm:hover {
+    background-color: #1e40af;
+}
