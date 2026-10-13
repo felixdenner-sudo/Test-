@@ -145,3 +145,106 @@ h1 {
     justify-content: center;
     margin-top: 50px;
 }
+/* Kaufbestätigung im bestehenden Stil, auch auf schmalen Displays. */
+.checkout-page main,
+.checkout-page main * {
+    box-sizing: border-box;
+}
+
+.checkout-page main > * {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+#purchase-form {
+    width: 100%;
+}
+
+#purchase-plan,
+#purchase-email,
+#purchase-status,
+#purchase-form p {
+    line-height: 1.5;
+}
+
+#purchase-plan {
+    font-weight: bold;
+    text-align: center;
+}
+
+#purchase-login:not([hidden]) {
+    display: block;
+    width: 100%;
+    min-height: 44px;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: inherit;
+}
+
+#purchase-login:hover {
+    background: #1e40af;
+}
+
+#purchase-login:focus-visible,
+.checkout-page main > a:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+#confirm-purchase {
+    min-height: 44px;
+    white-space: normal;
+}
+
+#confirm-purchase:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.checkout-page main > a:last-child {
+    padding: 12px 0;
+    color: #1d4ed8;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .checkout-page header {
+        height: auto;
+        min-height: 72px;
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .checkout-page header a {
+        margin: 0;
+        padding: 14px 10px;
+    }
+
+    .checkout-page h1 {
+        margin: 32px 16px 20px;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .checkout-page main {
+        margin: 20px 16px 32px;
+        padding: 20px;
+    }
+
+    .checkout-page main h2 {
+        margin-top: 0;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+
+

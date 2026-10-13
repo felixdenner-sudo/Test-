@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Jetzt Bezahlen</title>
-        <link rel="stylesheet" href="css.css">
-    </head>
-    <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="einloggen.html">Login</a>
-    </header>
-        <h1>Jetzt Bezahlen</h1>
-        <main>
-            <h2>Ihre Zahlung jetzt bestätigen</h2>
-            <a href="index.html">
-                <button onclick="alert('Danke für Ihren Einkauf')">
-                    Kauf bestätigen
-                </button>
-            </a>
-        </main>
-    </body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kauf bestätigen</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="checkout-page">
+<header>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="einloggen.html">Login</a>
+</header>
+<h1>Kauf bestätigen</h1>
+<main>
+    <h2>Dein ausgewählter Tarif</h2>
+    <p id="purchase-plan"></p>
+    <p id="purchase-email"></p>
+    <form id="purchase-form">
+        <button id="confirm-purchase" type="submit" hidden>Kauf bestätigen</button>
+    </form>
+    <a id="purchase-login" href="einloggen.html" hidden>Jetzt anmelden</a>
+    <p id="purchase-status" role="status" aria-live="polite"></p>
+    <noscript>Bitte aktiviere JavaScript, um dich anzumelden und den Kauf zu bestätigen.</noscript>
+    <a href="index.html">
+        <button>Zurück zur Tarifauswahl</button>
+    </a>
+</main>
+</body>
 </html>
